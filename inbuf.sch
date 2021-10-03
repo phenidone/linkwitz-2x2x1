@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 13
-Title ""
+Title "Input Buffers"
 Date "2021-10-03"
 Rev "A"
 Comp "Tyrrell Zaibatsu"
