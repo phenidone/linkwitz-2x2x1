@@ -157,77 +157,77 @@ Connection ~ 4400 4050
 $Comp
 L Amplifier_Operational:NE5532 U?
 U 3 1 615F8851
-P 5900 6750
-F 0 "U?" H 5858 6796 50  0000 L CNN
-F 1 "NE5532" H 5858 6705 50  0000 L CNN
-F 2 "" H 5900 6750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5900 6750 50  0001 C CNN
-	3    5900 6750
+P 1950 6900
+F 0 "U?" H 1908 6946 50  0000 L CNN
+F 1 "NE5532" H 1908 6855 50  0000 L CNN
+F 2 "" H 1950 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 1950 6900 50  0001 C CNN
+	3    1950 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 615FF758
-P 5250 7000
+P 1300 7150
 AR Path="/6157B871/615FF758" Ref="C?"  Part="1" 
 AR Path="/615961F1/615FF758" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615FF758" Ref="C?"  Part="1" 
 AR Path="/61597701/615FF758" Ref="C?"  Part="1" 
 AR Path="/615C4B54/615FF758" Ref="C?"  Part="1" 
 AR Path="/615FF758" Ref="C?"  Part="1" 
-F 0 "C?" H 5365 7046 50  0000 L CNN
-F 1 "1u" H 5365 6955 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5288 6850 50  0001 C CNN
-F 3 "~" H 5250 7000 50  0001 C CNN
-	1    5250 7000
+F 0 "C?" H 1415 7196 50  0000 L CNN
+F 1 "1u" H 1415 7105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1338 7000 50  0001 C CNN
+F 3 "~" H 1300 7150 50  0001 C CNN
+	1    1300 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 615FF75E
-P 5250 6500
+P 1300 6650
 AR Path="/6157B871/615FF75E" Ref="C?"  Part="1" 
 AR Path="/615961F1/615FF75E" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615FF75E" Ref="C?"  Part="1" 
 AR Path="/61597701/615FF75E" Ref="C?"  Part="1" 
 AR Path="/615C4B54/615FF75E" Ref="C?"  Part="1" 
 AR Path="/615FF75E" Ref="C?"  Part="1" 
-F 0 "C?" H 5365 6546 50  0000 L CNN
-F 1 "1u" H 5365 6455 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5288 6350 50  0001 C CNN
-F 3 "~" H 5250 6500 50  0001 C CNN
-	1    5250 6500
+F 0 "C?" H 1415 6696 50  0000 L CNN
+F 1 "1u" H 1415 6605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1338 6500 50  0001 C CNN
+F 3 "~" H 1300 6650 50  0001 C CNN
+	1    1300 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 6650 5250 6750
-Connection ~ 5250 6750
+	1300 6800 1300 6900
+Connection ~ 1300 6900
 Wire Wire Line
-	5250 6750 5250 6850
-Text GLabel 4850 6750 0    50   UnSpc ~ 0
+	1300 6900 1300 7000
+Text GLabel 900  6900 0    50   UnSpc ~ 0
 GND
-Text GLabel 4850 6200 0    50   UnSpc ~ 0
+Text GLabel 900  6350 0    50   UnSpc ~ 0
 VCC
-Text GLabel 4850 7350 0    50   UnSpc ~ 0
+Text GLabel 900  7500 0    50   UnSpc ~ 0
 VEE
 Wire Wire Line
-	4850 6200 5250 6200
+	900  6350 1300 6350
 Wire Wire Line
-	5250 6200 5250 6350
+	1300 6350 1300 6500
 Wire Wire Line
-	4850 7350 5250 7350
+	900  7500 1300 7500
 Wire Wire Line
-	5250 7350 5250 7150
+	1300 7500 1300 7300
 Wire Wire Line
-	5250 6200 5800 6200
-Connection ~ 5250 6200
+	1300 6350 1850 6350
+Connection ~ 1300 6350
 Wire Wire Line
-	5250 7350 5800 7350
-Connection ~ 5250 7350
+	1300 7500 1850 7500
+Connection ~ 1300 7500
 Wire Wire Line
-	5800 6200 5800 6450
+	1850 6350 1850 6600
 Wire Wire Line
-	5800 7050 5800 7350
+	1850 7200 1850 7500
 Wire Wire Line
 	5700 4650 5700 4850
 Wire Wire Line
@@ -694,7 +694,7 @@ AR Path="/616914EE/619534AB" Ref="C?"  Part="1"
 AR Path="/619534AB" Ref="C?"  Part="1" 
 F 0 "C?" V 8998 1450 50  0000 C CNN
 F 1 "10u" V 9089 1450 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 9288 1300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 9288 1300 50  0001 C CNN
 F 3 "~" H 9250 1450 50  0001 C CNN
 	1    9250 1450
 	0    1    1    0   
@@ -703,9 +703,9 @@ Wire Wire Line
 	8600 1450 8700 1450
 Connection ~ 8600 1450
 Wire Wire Line
-	9000 1450 9100 1450
+	9000 1450 9050 1450
 Wire Wire Line
-	9400 1450 9550 1450
+	9400 1450 9450 1450
 Wire Wire Line
 	9550 1450 9550 1600
 Wire Wire Line
@@ -779,13 +779,40 @@ Left In
 Text Notes 1350 1950 2    50   ~ 0
 Right In
 Wire Wire Line
-	4850 6750 5250 6750
+	900  6900 1300 6900
 $Sheet
-S 1700 6350 800  550 
+S 850  5350 800  550 
 U 61A2CF17
 F0 "psu" 50
 F1 "psu.sch" 50
 $EndSheet
-Text Notes 2550 6150 2    50   ~ 0
+Text Notes 1700 5150 2    50   ~ 0
 Rectifier and Regulators
+$Comp
+L Device:C C?
+U 1 1 615E0126
+P 9250 1250
+AR Path="/616914EE/615E0126" Ref="C?"  Part="1" 
+AR Path="/615E0126" Ref="C?"  Part="1" 
+F 0 "C?" V 8998 1250 50  0000 C CNN
+F 1 "10u" V 9089 1250 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3" H 9288 1100 50  0001 C CNN
+F 3 "~" H 9250 1250 50  0001 C CNN
+	1    9250 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 1250 9050 1250
+Wire Wire Line
+	9050 1250 9050 1450
+Connection ~ 9050 1450
+Wire Wire Line
+	9050 1450 9100 1450
+Wire Wire Line
+	9400 1250 9450 1250
+Wire Wire Line
+	9450 1250 9450 1450
+Connection ~ 9450 1450
+Wire Wire Line
+	9450 1450 9550 1450
 $EndSCHEMATC
