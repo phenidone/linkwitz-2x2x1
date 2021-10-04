@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 13
-Title "Input Buffers"
+Title "Input Buffers, 10dB Gain"
 Date "2021-10-03"
 Rev "A"
 Comp "Tyrrell Zaibatsu"
@@ -14,99 +14,62 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:NE5532 U?
-U 1 1 6159AB0F
-P 3750 2600
-F 0 "U?" H 3750 2233 50  0000 C CNN
-F 1 "NE5532" H 3750 2324 50  0000 C CNN
-F 2 "" H 3750 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3750 2600 50  0001 C CNN
-	1    3750 2600
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:NE5532 U?
+L Amplifier_Operational:NE5532 U6
 U 2 1 6159C1D0
-P 3750 4200
-F 0 "U?" H 3750 3833 50  0000 C CNN
-F 1 "NE5532" H 3750 3924 50  0000 C CNN
-F 2 "" H 3750 4200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3750 4200 50  0001 C CNN
-	2    3750 4200
-	1    0    0    1   
+P 3700 4400
+F 0 "U6" H 3700 4800 50  0000 C CNN
+F 1 "NE5532" H 3750 4700 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3700 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3700 4400 50  0001 C CNN
+	2    3700 4400
+	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:NE5532 U?
+L Amplifier_Operational:NE5532 U6
 U 3 1 6159D2F7
 P 3400 6550
-F 0 "U?" H 3358 6596 50  0000 L CNN
+F 0 "U6" H 3358 6596 50  0000 L CNN
 F 1 "NE5532" H 3358 6505 50  0000 L CNN
-F 2 "" H 3400 6550 50  0001 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3400 6550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3400 6550 50  0001 C CNN
 	3    3400 6550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 2600 4150 2600
-Wire Wire Line
-	4150 2600 4150 2250
-Wire Wire Line
-	4150 2250 3350 2250
-Wire Wire Line
-	3350 2250 3350 2500
-Wire Wire Line
-	3350 2500 3450 2500
 $Comp
-L Device:R R?
+L Device:R R29
 U 1 1 615A0373
-P 3150 3100
-F 0 "R?" H 3220 3146 50  0000 L CNN
-F 1 "100k" H 3220 3055 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 3080 3100 50  0001 C CNN
-F 3 "~" H 3150 3100 50  0001 C CNN
-	1    3150 3100
+P 3050 2350
+F 0 "R29" H 2900 2500 50  0000 L CNN
+F 1 "22k" V 3050 2250 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 2980 2350 50  0001 C CNN
+F 3 "~" H 3050 2350 50  0001 C CNN
+	1    3050 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R28
 U 1 1 615A0CB0
-P 2500 2700
-F 0 "R?" V 2293 2700 50  0000 C CNN
-F 1 "1k" V 2384 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2430 2700 50  0001 C CNN
-F 3 "~" H 2500 2700 50  0001 C CNN
-	1    2500 2700
+P 2450 1700
+F 0 "R28" V 2243 1700 50  0000 C CNN
+F 1 "1k" V 2334 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2380 1700 50  0001 C CNN
+F 3 "~" H 2450 1700 50  0001 C CNN
+	1    2450 1700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C33
 U 1 1 615A3CF4
-P 2850 3100
-F 0 "C?" H 2965 3146 50  0000 L CNN
-F 1 "1n" H 2965 3055 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2888 2950 50  0001 C CNN
-F 3 "~" H 2850 3100 50  0001 C CNN
-	1    2850 3100
+P 2800 2350
+F 0 "C33" H 2600 2450 50  0000 L CNN
+F 1 "1n" H 2600 2250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2838 2200 50  0001 C CNN
+F 3 "~" H 2800 2350 50  0001 C CNN
+	1    2800 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 2700 2850 2700
-Wire Wire Line
-	2850 2950 2850 2700
-Connection ~ 2850 2700
-Wire Wire Line
-	2850 2700 3150 2700
-Wire Wire Line
-	3150 2950 3150 2700
-Connection ~ 3150 2700
-Wire Wire Line
-	3150 2700 3450 2700
-Wire Wire Line
-	3150 3250 3150 3400
-Wire Wire Line
-	3150 3400 2850 3400
-Wire Wire Line
-	2850 3400 2850 3250
+	2800 2650 2800 2500
 $Comp
 L Device:C C?
 U 1 1 615A8570
@@ -115,8 +78,8 @@ AR Path="/6157B871/615A8570" Ref="C?"  Part="1"
 AR Path="/615961F1/615A8570" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615A8570" Ref="C?"  Part="1" 
 AR Path="/61597701/615A8570" Ref="C?"  Part="1" 
-AR Path="/6159A74A/615A8570" Ref="C?"  Part="1" 
-F 0 "C?" H 2865 6796 50  0000 L CNN
+AR Path="/6159A74A/615A8570" Ref="C36"  Part="1" 
+F 0 "C36" H 2865 6796 50  0000 L CNN
 F 1 "1u" H 2865 6705 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2788 6600 50  0001 C CNN
 F 3 "~" H 2750 6750 50  0001 C CNN
@@ -131,8 +94,8 @@ AR Path="/6157B871/615A8576" Ref="C?"  Part="1"
 AR Path="/615961F1/615A8576" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615A8576" Ref="C?"  Part="1" 
 AR Path="/61597701/615A8576" Ref="C?"  Part="1" 
-AR Path="/6159A74A/615A8576" Ref="C?"  Part="1" 
-F 0 "C?" H 2865 6296 50  0000 L CNN
+AR Path="/6159A74A/615A8576" Ref="C35"  Part="1" 
+F 0 "C35" H 2865 6296 50  0000 L CNN
 F 1 "1u" H 2865 6205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2788 6100 50  0001 C CNN
 F 3 "~" H 2750 6250 50  0001 C CNN
@@ -170,93 +133,194 @@ Wire Wire Line
 	3300 5950 3300 6250
 Wire Wire Line
 	3300 6850 3300 7100
-Text GLabel 2650 3400 0    50   Input ~ 0
+Text GLabel 2600 2650 0    50   Input ~ 0
 GND
 Wire Wire Line
-	2850 3400 2650 3400
-Connection ~ 2850 3400
-Text HLabel 2050 2700 0    50   Input ~ 0
+	2800 2650 2600 2650
+Connection ~ 2800 2650
+Text HLabel 2000 1700 0    50   Input ~ 0
 IN1
-Text HLabel 2050 4300 0    50   Input ~ 0
+Text HLabel 2000 4300 0    50   Input ~ 0
 IN2
 Wire Wire Line
-	2050 2700 2350 2700
+	2000 1700 2300 1700
 Wire Wire Line
-	2050 4300 2350 4300
-Connection ~ 2850 5000
+	2000 4300 2300 4300
+Connection ~ 2800 5250
 Wire Wire Line
-	2850 5000 2650 5000
-Text GLabel 2650 5000 0    50   Input ~ 0
+	2800 5250 2600 5250
+Text GLabel 2600 5250 0    50   Input ~ 0
 GND
 Wire Wire Line
-	2850 5000 2850 4850
-Wire Wire Line
-	3150 5000 2850 5000
-Wire Wire Line
-	3150 4850 3150 5000
-Wire Wire Line
-	3150 4300 3450 4300
-Connection ~ 3150 4300
-Wire Wire Line
-	3150 4550 3150 4300
-Wire Wire Line
-	2850 4300 3150 4300
-Connection ~ 2850 4300
-Wire Wire Line
-	2850 4550 2850 4300
-Wire Wire Line
-	2650 4300 2850 4300
+	2800 5250 2800 5100
 $Comp
-L Device:C C?
+L Device:C C34
 U 1 1 615AEF58
-P 2850 4700
-F 0 "C?" H 2965 4746 50  0000 L CNN
-F 1 "1n" H 2965 4655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2888 4550 50  0001 C CNN
-F 3 "~" H 2850 4700 50  0001 C CNN
-	1    2850 4700
+P 2800 4950
+F 0 "C34" H 2650 5050 50  0000 L CNN
+F 1 "1n" H 2650 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2838 4800 50  0001 C CNN
+F 3 "~" H 2800 4950 50  0001 C CNN
+	1    2800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 615AEF52
+P 2450 4300
+F 0 "R30" V 2243 4300 50  0000 C CNN
+F 1 "1k" V 2334 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2380 4300 50  0001 C CNN
+F 3 "~" H 2450 4300 50  0001 C CNN
+	1    2450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 615AEF4C
+P 3050 4950
+F 0 "R31" H 2900 5150 50  0000 L CNN
+F 1 "22k" V 3050 4850 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 2980 4950 50  0001 C CNN
+F 3 "~" H 3050 4950 50  0001 C CNN
+	1    3050 4950
+	1    0    0    -1  
+$EndComp
+Text HLabel 4150 1800 2    50   Output ~ 0
+OUT1
+Text HLabel 4150 4400 2    50   Output ~ 0
+OUT2
+$Comp
+L Amplifier_Operational:NE5532 U6
+U 1 1 6159AB0F
+P 3700 1800
+F 0 "U6" H 3650 2200 50  0000 C CNN
+F 1 "NE5532" H 3700 2100 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3700 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3700 1800 50  0001 C CNN
+	1    3700 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 615AEF52
-P 2500 4300
-F 0 "R?" V 2293 4300 50  0000 C CNN
-F 1 "1k" V 2384 4300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2430 4300 50  0001 C CNN
-F 3 "~" H 2500 4300 50  0001 C CNN
-	1    2500 4300
+U 1 1 617421D9
+P 3700 2100
+F 0 "R?" H 3770 2146 50  0000 L CNN
+F 1 "4k7" V 3700 2050 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3630 2100 50  0001 C CNN
+F 3 "~" H 3700 2100 50  0001 C CNN
+	1    3700 2100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 615AEF4C
-P 3150 4700
-F 0 "R?" H 3220 4746 50  0000 L CNN
-F 1 "100k" H 3220 4655 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 3080 4700 50  0001 C CNN
-F 3 "~" H 3150 4700 50  0001 C CNN
-	1    3150 4700
-	1    0    0    -1  
+U 1 1 61745CC7
+P 3300 2350
+F 0 "R?" H 3350 2200 50  0000 L CNN
+F 1 "2k2" V 3300 2300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3230 2350 50  0001 C CNN
+F 3 "~" H 3300 2350 50  0001 C CNN
+	1    3300 2350
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3350 4100 3450 4100
+	3300 2500 3300 2650
 Wire Wire Line
-	3350 3850 3350 4100
-Text HLabel 4350 2600 2    50   Output ~ 0
-OUT1
-Text HLabel 4350 4200 2    50   Output ~ 0
-OUT2
+	4000 1800 4050 1800
 Wire Wire Line
-	3350 3850 4150 3850
+	4050 1800 4050 2100
 Wire Wire Line
-	4150 3850 4150 4200
+	3850 2100 4050 2100
+Connection ~ 4050 1800
 Wire Wire Line
-	4150 4200 4050 4200
+	4050 1800 4150 1800
 Wire Wire Line
-	4150 4200 4350 4200
-Connection ~ 4150 4200
+	2600 1700 2800 1700
 Wire Wire Line
-	4150 2600 4350 2600
-Connection ~ 4150 2600
+	3300 1900 3400 1900
+Wire Wire Line
+	2800 1700 2800 2200
+Connection ~ 2800 1700
+Wire Wire Line
+	2800 1700 3050 1700
+Wire Wire Line
+	3050 1700 3050 2200
+Wire Wire Line
+	3300 1900 3300 2100
+Wire Wire Line
+	3550 2100 3300 2100
+Connection ~ 3300 2100
+Wire Wire Line
+	3300 2100 3300 2200
+Wire Wire Line
+	4000 4400 4050 4400
+$Comp
+L Device:R R?
+U 1 1 61768BB0
+P 3700 4700
+F 0 "R?" H 3770 4746 50  0000 L CNN
+F 1 "4k7" V 3700 4650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3630 4700 50  0001 C CNN
+F 3 "~" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61768BB6
+P 3300 4950
+F 0 "R?" H 3350 4750 50  0000 L CNN
+F 1 "2k2" V 3300 4900 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3230 4950 50  0001 C CNN
+F 3 "~" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 5100 3300 5250
+Wire Wire Line
+	4050 4400 4050 4700
+Wire Wire Line
+	3850 4700 4050 4700
+Wire Wire Line
+	3300 4500 3300 4700
+Wire Wire Line
+	3550 4700 3300 4700
+Connection ~ 3300 4700
+Wire Wire Line
+	3300 4700 3300 4800
+Connection ~ 4050 4400
+Wire Wire Line
+	4050 4400 4150 4400
+Wire Wire Line
+	3300 4500 3400 4500
+Wire Wire Line
+	2600 4300 2800 4300
+Wire Wire Line
+	2800 4300 2800 4800
+Connection ~ 2800 4300
+Connection ~ 3050 1700
+Wire Wire Line
+	3050 1700 3400 1700
+Wire Wire Line
+	2800 2650 3050 2650
+Wire Wire Line
+	3050 2500 3050 2650
+Connection ~ 3050 2650
+Wire Wire Line
+	3050 2650 3300 2650
+Wire Wire Line
+	2800 4300 3050 4300
+Wire Wire Line
+	2800 5250 3050 5250
+Wire Wire Line
+	3050 5250 3050 5100
+Connection ~ 3050 5250
+Wire Wire Line
+	3050 5250 3300 5250
+Wire Wire Line
+	3050 4800 3050 4300
+Connection ~ 3050 4300
+Wire Wire Line
+	3050 4300 3400 4300
 $EndSCHEMATC
