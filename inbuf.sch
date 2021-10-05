@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 6 19
 Title "Input Buffers, 10dB Gain"
 Date "2021-10-03"
 Rev "A"
@@ -36,21 +36,21 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3400 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R29
+L Device:R R28
 U 1 1 615A0373
 P 3050 2350
-F 0 "R29" H 2900 2500 50  0000 L CNN
-F 1 "22k" V 3050 2250 50  0000 L CNN
+F 0 "R28" H 2900 2500 50  0000 L CNN
+F 1 "33k" V 3050 2250 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 2980 2350 50  0001 C CNN
 F 3 "~" H 3050 2350 50  0001 C CNN
 	1    3050 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R28
+L Device:R R25
 U 1 1 615A0CB0
 P 2450 1700
-F 0 "R28" V 2243 1700 50  0000 C CNN
+F 0 "R25" V 2243 1700 50  0000 C CNN
 F 1 "1k" V 2334 1700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2380 1700 50  0001 C CNN
 F 3 "~" H 2450 1700 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" H 2450 1700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C33
+L Device:C C32
 U 1 1 615A3CF4
 P 2800 2350
-F 0 "C33" H 2600 2450 50  0000 L CNN
+F 0 "C32" H 2600 2450 50  0000 L CNN
 F 1 "1n" H 2600 2250 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2838 2200 50  0001 C CNN
 F 3 "~" H 2800 2350 50  0001 C CNN
@@ -94,8 +94,8 @@ AR Path="/6157B871/615A8576" Ref="C?"  Part="1"
 AR Path="/615961F1/615A8576" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615A8576" Ref="C?"  Part="1" 
 AR Path="/61597701/615A8576" Ref="C?"  Part="1" 
-AR Path="/6159A74A/615A8576" Ref="C35"  Part="1" 
-F 0 "C35" H 2865 6296 50  0000 L CNN
+AR Path="/6159A74A/615A8576" Ref="C34"  Part="1" 
+F 0 "C34" H 2865 6296 50  0000 L CNN
 F 1 "1u" H 2865 6205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2788 6100 50  0001 C CNN
 F 3 "~" H 2750 6250 50  0001 C CNN
@@ -109,11 +109,11 @@ Wire Wire Line
 Connection ~ 2750 6500
 Wire Wire Line
 	2750 6500 2750 6600
-Text GLabel 2350 6500 0    50   Input ~ 0
+Text GLabel 2350 6500 0    50   UnSpc ~ 0
 GND
-Text GLabel 2350 5950 0    50   Input ~ 0
+Text GLabel 2350 5950 0    50   UnSpc ~ 0
 VCC
-Text GLabel 2350 7100 0    50   Input ~ 0
+Text GLabel 2350 7100 0    50   UnSpc ~ 0
 VEE
 Wire Wire Line
 	2350 5950 2750 5950
@@ -133,7 +133,7 @@ Wire Wire Line
 	3300 5950 3300 6250
 Wire Wire Line
 	3300 6850 3300 7100
-Text GLabel 2600 2650 0    50   Input ~ 0
+Text GLabel 2600 2650 0    50   UnSpc ~ 0
 GND
 Wire Wire Line
 	2800 2650 2600 2650
@@ -149,15 +149,15 @@ Wire Wire Line
 Connection ~ 2800 5250
 Wire Wire Line
 	2800 5250 2600 5250
-Text GLabel 2600 5250 0    50   Input ~ 0
+Text GLabel 2600 5250 0    50   UnSpc ~ 0
 GND
 Wire Wire Line
 	2800 5250 2800 5100
 $Comp
-L Device:C C34
+L Device:C C33
 U 1 1 615AEF58
 P 2800 4950
-F 0 "C34" H 2650 5050 50  0000 L CNN
+F 0 "C33" H 2650 5050 50  0000 L CNN
 F 1 "1n" H 2650 4850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2838 4800 50  0001 C CNN
 F 3 "~" H 2800 4950 50  0001 C CNN
@@ -165,10 +165,10 @@ F 3 "~" H 2800 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R30
+L Device:R R33
 U 1 1 615AEF52
 P 2450 4300
-F 0 "R30" V 2243 4300 50  0000 C CNN
+F 0 "R33" V 2243 4300 50  0000 C CNN
 F 1 "1k" V 2334 4300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2380 4300 50  0001 C CNN
 F 3 "~" H 2450 4300 50  0001 C CNN
@@ -176,20 +176,16 @@ F 3 "~" H 2450 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R31
+L Device:R R35
 U 1 1 615AEF4C
 P 3050 4950
-F 0 "R31" H 2900 5150 50  0000 L CNN
-F 1 "22k" V 3050 4850 50  0000 L CNN
+F 0 "R35" H 2900 5150 50  0000 L CNN
+F 1 "33k" V 3050 4850 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 2980 4950 50  0001 C CNN
 F 3 "~" H 3050 4950 50  0001 C CNN
 	1    3050 4950
 	1    0    0    -1  
 $EndComp
-Text HLabel 4150 1800 2    50   Output ~ 0
-OUT1
-Text HLabel 4150 4400 2    50   Output ~ 0
-OUT2
 $Comp
 L Amplifier_Operational:NE5532 U6
 U 1 1 6159AB0F
@@ -202,10 +198,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3700 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R26
 U 1 1 617421D9
 P 3700 2100
-F 0 "R?" H 3770 2146 50  0000 L CNN
+F 0 "R26" H 3770 2146 50  0000 L CNN
 F 1 "4k7" V 3700 2050 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 3630 2100 50  0001 C CNN
 F 3 "~" H 3700 2100 50  0001 C CNN
@@ -213,10 +209,10 @@ F 3 "~" H 3700 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R29
 U 1 1 61745CC7
 P 3300 2350
-F 0 "R?" H 3350 2200 50  0000 L CNN
+F 0 "R29" H 3350 2200 50  0000 L CNN
 F 1 "2k2" V 3300 2300 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 3230 2350 50  0001 C CNN
 F 3 "~" H 3300 2350 50  0001 C CNN
@@ -255,10 +251,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 4400 4050 4400
 $Comp
-L Device:R R?
+L Device:R R34
 U 1 1 61768BB0
 P 3700 4700
-F 0 "R?" H 3770 4746 50  0000 L CNN
+F 0 "R34" H 3770 4746 50  0000 L CNN
 F 1 "4k7" V 3700 4650 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 3630 4700 50  0001 C CNN
 F 3 "~" H 3700 4700 50  0001 C CNN
@@ -266,10 +262,10 @@ F 3 "~" H 3700 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R36
 U 1 1 61768BB6
 P 3300 4950
-F 0 "R?" H 3350 4750 50  0000 L CNN
+F 0 "R36" H 3350 4750 50  0000 L CNN
 F 1 "2k2" V 3300 4900 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 3230 4950 50  0001 C CNN
 F 3 "~" H 3300 4950 50  0001 C CNN
@@ -323,4 +319,237 @@ Wire Wire Line
 Connection ~ 3050 4300
 Wire Wire Line
 	3050 4300 3400 4300
+$Comp
+L Amplifier_Operational:NE5532 U7
+U 2 1 6190D927
+P 5950 4400
+F 0 "U7" H 5950 4800 50  0000 C CNN
+F 1 "NE5532" H 6000 4700 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 4400 50  0001 C CNN
+	2    5950 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 6400 1800 2    50   Output ~ 0
+OUT1
+Text HLabel 6400 4400 2    50   Output ~ 0
+OUT2
+$Comp
+L Amplifier_Operational:NE5532 U7
+U 1 1 6190D92F
+P 5950 1800
+F 0 "U7" H 5900 2200 50  0000 C CNN
+F 1 "NE5532" H 5950 2100 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 1800 50  0001 C CNN
+	1    5950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1800 6300 1800
+Wire Wire Line
+	6300 1800 6300 2100
+Connection ~ 6300 1800
+Wire Wire Line
+	6300 1800 6400 1800
+Wire Wire Line
+	5550 1900 5650 1900
+Wire Wire Line
+	6250 4400 6300 4400
+Wire Wire Line
+	6300 4400 6300 4700
+Connection ~ 6300 4400
+Wire Wire Line
+	6300 4400 6400 4400
+Wire Wire Line
+	5550 4500 5650 4500
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J7
+U 1 1 6191040E
+P 4550 3300
+F 0 "J7" V 4646 3112 50  0000 R CNN
+F 1 "Conn_02x03_Odd_Even" V 4555 3112 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4550 3300 50  0001 C CNN
+F 3 "~" H 4550 3300 50  0001 C CNN
+	1    4550 3300
+	0    -1   -1   0   
+$EndComp
+Text Notes 3450 3300 0    50   ~ 0
+Volume Pot\nLinear 20k dual gang
+Wire Wire Line
+	4150 3500 4450 3500
+Wire Wire Line
+	4150 3000 4450 3000
+Wire Wire Line
+	5550 2100 5550 1900
+Wire Wire Line
+	5550 2100 6300 2100
+Wire Wire Line
+	5550 4700 5550 4500
+Wire Wire Line
+	5550 4700 6300 4700
+$Comp
+L Device:R R31
+U 1 1 6192D4B9
+P 4750 3700
+F 0 "R31" V 4850 3700 50  0000 L CNN
+F 1 "3k9" V 4750 3650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4680 3700 50  0001 C CNN
+F 3 "~" H 4750 3700 50  0001 C CNN
+	1    4750 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 6192E26C
+P 4750 2800
+F 0 "R30" V 4850 2800 50  0000 L CNN
+F 1 "3k9" V 4750 2750 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4680 2800 50  0001 C CNN
+F 3 "~" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3500 4950 3000
+$Comp
+L Device:R R32
+U 1 1 619499F6
+P 4150 4000
+F 0 "R32" H 4220 4046 50  0000 L CNN
+F 1 "100" V 4150 3950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4080 4000 50  0001 C CNN
+F 3 "~" H 4150 4000 50  0001 C CNN
+	1    4150 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 61955E2D
+P 4150 2150
+F 0 "R27" H 4220 2196 50  0000 L CNN
+F 1 "100" V 4150 2100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4080 2150 50  0001 C CNN
+F 3 "~" H 4150 2150 50  0001 C CNN
+	1    4150 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 1800 4150 2000
+Wire Wire Line
+	4150 2300 4150 3000
+Wire Wire Line
+	4150 3850 4150 3500
+Wire Wire Line
+	4150 4150 4150 4400
+Wire Wire Line
+	4900 2800 4950 2800
+Wire Wire Line
+	4950 2800 4950 3000
+Wire Wire Line
+	4550 4300 5650 4300
+Wire Wire Line
+	4950 3500 4950 3700
+Wire Wire Line
+	4950 3700 4900 3700
+Connection ~ 4950 3500
+$Comp
+L Amplifier_Operational:NE5532 U7
+U 3 1 61982144
+P 5150 6550
+F 0 "U7" H 5108 6596 50  0000 L CNN
+F 1 "NE5532" H 5108 6505 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5150 6550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5150 6550 50  0001 C CNN
+	3    5150 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6198214A
+P 4500 6750
+AR Path="/6157B871/6198214A" Ref="C?"  Part="1" 
+AR Path="/615961F1/6198214A" Ref="C?"  Part="1" 
+AR Path="/61596D2A/6198214A" Ref="C?"  Part="1" 
+AR Path="/61597701/6198214A" Ref="C?"  Part="1" 
+AR Path="/6159A74A/6198214A" Ref="C37"  Part="1" 
+F 0 "C37" H 4615 6796 50  0000 L CNN
+F 1 "1u" H 4615 6705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4538 6600 50  0001 C CNN
+F 3 "~" H 4500 6750 50  0001 C CNN
+	1    4500 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61982150
+P 4500 6250
+AR Path="/6157B871/61982150" Ref="C?"  Part="1" 
+AR Path="/615961F1/61982150" Ref="C?"  Part="1" 
+AR Path="/61596D2A/61982150" Ref="C?"  Part="1" 
+AR Path="/61597701/61982150" Ref="C?"  Part="1" 
+AR Path="/6159A74A/61982150" Ref="C35"  Part="1" 
+F 0 "C35" H 4615 6296 50  0000 L CNN
+F 1 "1u" H 4615 6205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4538 6100 50  0001 C CNN
+F 3 "~" H 4500 6250 50  0001 C CNN
+	1    4500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6400 4500 6500
+Wire Wire Line
+	4100 6500 4500 6500
+Connection ~ 4500 6500
+Wire Wire Line
+	4500 6500 4500 6600
+Text GLabel 4100 6500 0    50   UnSpc ~ 0
+GND
+Text GLabel 4100 5950 0    50   UnSpc ~ 0
+VCC
+Text GLabel 4100 7100 0    50   UnSpc ~ 0
+VEE
+Wire Wire Line
+	4100 5950 4500 5950
+Wire Wire Line
+	4500 5950 4500 6100
+Wire Wire Line
+	4100 7100 4500 7100
+Wire Wire Line
+	4500 7100 4500 6900
+Wire Wire Line
+	4500 5950 5050 5950
+Connection ~ 4500 5950
+Wire Wire Line
+	4500 7100 5050 7100
+Connection ~ 4500 7100
+Wire Wire Line
+	5050 5950 5050 6250
+Wire Wire Line
+	5050 6850 5050 7100
+Text GLabel 5200 3500 2    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	5250 3500 4950 3500
+Wire Wire Line
+	4550 1700 5650 1700
+Wire Wire Line
+	4550 3500 4550 3700
+Connection ~ 4950 3000
+Wire Wire Line
+	4550 1700 4550 2800
+Wire Wire Line
+	4550 2800 4600 2800
+Connection ~ 4550 2800
+Wire Wire Line
+	4550 2800 4550 3000
+Wire Wire Line
+	4650 3000 4950 3000
+Wire Wire Line
+	4650 3500 4950 3500
+Wire Wire Line
+	4550 3700 4600 3700
+Connection ~ 4550 3700
+Wire Wire Line
+	4550 3700 4550 4300
 $EndSCHEMATC

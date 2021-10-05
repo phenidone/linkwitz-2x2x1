@@ -2,7 +2,7 @@
 
 This is a PCB design for an analogue active crossover system.
 
-Very dradty.
+Very drafty.
 
 ## License
 
