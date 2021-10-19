@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 19
+Sheet 6 17
 Title "Input Buffers, 10dB Gain"
 Date "2021-10-03"
 Rev "A"
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:NE5532 U6
+L Amplifier_Operational:NE5532 U7
 U 2 1 6159C1D0
 P 3700 4400
-F 0 "U6" H 3700 4800 50  0000 C CNN
+F 0 "U7" H 3700 4800 50  0000 C CNN
 F 1 "NE5532" H 3750 4700 50  0000 C CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3700 4400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3700 4400 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" H 2450 1700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C32
+L Device:C C33
 U 1 1 615A3CF4
 P 2800 2350
-F 0 "C32" H 2600 2450 50  0000 L CNN
+F 0 "C33" H 2600 2450 50  0000 L CNN
 F 1 "1n" H 2600 2250 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2838 2200 50  0001 C CNN
 F 3 "~" H 2800 2350 50  0001 C CNN
@@ -78,9 +78,9 @@ AR Path="/6157B871/615A8570" Ref="C?"  Part="1"
 AR Path="/615961F1/615A8570" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615A8570" Ref="C?"  Part="1" 
 AR Path="/61597701/615A8570" Ref="C?"  Part="1" 
-AR Path="/6159A74A/615A8570" Ref="C36"  Part="1" 
-F 0 "C36" H 2865 6796 50  0000 L CNN
-F 1 "1u" H 2865 6705 50  0000 L CNN
+AR Path="/6159A74A/615A8570" Ref="C37"  Part="1" 
+F 0 "C37" H 2865 6796 50  0000 L CNN
+F 1 "100n" H 2865 6705 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2788 6600 50  0001 C CNN
 F 3 "~" H 2750 6750 50  0001 C CNN
 	1    2750 6750
@@ -94,9 +94,9 @@ AR Path="/6157B871/615A8576" Ref="C?"  Part="1"
 AR Path="/615961F1/615A8576" Ref="C?"  Part="1" 
 AR Path="/61596D2A/615A8576" Ref="C?"  Part="1" 
 AR Path="/61597701/615A8576" Ref="C?"  Part="1" 
-AR Path="/6159A74A/615A8576" Ref="C34"  Part="1" 
-F 0 "C34" H 2865 6296 50  0000 L CNN
-F 1 "1u" H 2865 6205 50  0000 L CNN
+AR Path="/6159A74A/615A8576" Ref="C35"  Part="1" 
+F 0 "C35" H 2865 6296 50  0000 L CNN
+F 1 "100n" H 2865 6205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2788 6100 50  0001 C CNN
 F 3 "~" H 2750 6250 50  0001 C CNN
 	1    2750 6250
@@ -154,10 +154,10 @@ GND
 Wire Wire Line
 	2800 5250 2800 5100
 $Comp
-L Device:C C33
+L Device:C C34
 U 1 1 615AEF58
 P 2800 4950
-F 0 "C33" H 2650 5050 50  0000 L CNN
+F 0 "C34" H 2650 5050 50  0000 L CNN
 F 1 "1n" H 2650 4850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2838 4800 50  0001 C CNN
 F 3 "~" H 2800 4950 50  0001 C CNN
@@ -319,32 +319,10 @@ Wire Wire Line
 Connection ~ 3050 4300
 Wire Wire Line
 	3050 4300 3400 4300
-$Comp
-L Amplifier_Operational:NE5532 U7
-U 2 1 6190D927
-P 5950 4400
-F 0 "U7" H 5950 4800 50  0000 C CNN
-F 1 "NE5532" H 6000 4700 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 4400 50  0001 C CNN
-	2    5950 4400
-	1    0    0    -1  
-$EndComp
 Text HLabel 6400 1800 2    50   Output ~ 0
 OUT1
 Text HLabel 6400 4400 2    50   Output ~ 0
 OUT2
-$Comp
-L Amplifier_Operational:NE5532 U7
-U 1 1 6190D92F
-P 5950 1800
-F 0 "U7" H 5900 2200 50  0000 C CNN
-F 1 "NE5532" H 5950 2100 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 1800 50  0001 C CNN
-	1    5950 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 1800 6300 1800
 Wire Wire Line
@@ -364,10 +342,10 @@ Wire Wire Line
 Wire Wire Line
 	5550 4500 5650 4500
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J7
+L Connector_Generic:Conn_02x03_Odd_Even J8
 U 1 1 6191040E
 P 4550 3300
-F 0 "J7" V 4646 3112 50  0000 R CNN
+F 0 "J8" V 4646 3112 50  0000 R CNN
 F 1 "Conn_02x03_Odd_Even" V 4555 3112 50  0000 R CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4550 3300 50  0001 C CNN
 F 3 "~" H 4550 3300 50  0001 C CNN
@@ -472,9 +450,9 @@ AR Path="/6157B871/6198214A" Ref="C?"  Part="1"
 AR Path="/615961F1/6198214A" Ref="C?"  Part="1" 
 AR Path="/61596D2A/6198214A" Ref="C?"  Part="1" 
 AR Path="/61597701/6198214A" Ref="C?"  Part="1" 
-AR Path="/6159A74A/6198214A" Ref="C37"  Part="1" 
-F 0 "C37" H 4615 6796 50  0000 L CNN
-F 1 "1u" H 4615 6705 50  0000 L CNN
+AR Path="/6159A74A/6198214A" Ref="C38"  Part="1" 
+F 0 "C38" H 4615 6796 50  0000 L CNN
+F 1 "100n" H 4615 6705 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4538 6600 50  0001 C CNN
 F 3 "~" H 4500 6750 50  0001 C CNN
 	1    4500 6750
@@ -488,9 +466,9 @@ AR Path="/6157B871/61982150" Ref="C?"  Part="1"
 AR Path="/615961F1/61982150" Ref="C?"  Part="1" 
 AR Path="/61596D2A/61982150" Ref="C?"  Part="1" 
 AR Path="/61597701/61982150" Ref="C?"  Part="1" 
-AR Path="/6159A74A/61982150" Ref="C35"  Part="1" 
-F 0 "C35" H 4615 6296 50  0000 L CNN
-F 1 "1u" H 4615 6205 50  0000 L CNN
+AR Path="/6159A74A/61982150" Ref="C36"  Part="1" 
+F 0 "C36" H 4615 6296 50  0000 L CNN
+F 1 "100n" H 4615 6205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4538 6100 50  0001 C CNN
 F 3 "~" H 4500 6250 50  0001 C CNN
 	1    4500 6250
@@ -527,7 +505,7 @@ Wire Wire Line
 	5050 5950 5050 6250
 Wire Wire Line
 	5050 6850 5050 7100
-Text GLabel 5200 3500 2    50   UnSpc ~ 0
+Text GLabel 5250 3500 2    50   UnSpc ~ 0
 GND
 Wire Wire Line
 	5250 3500 4950 3500
@@ -536,8 +514,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 3500 4550 3700
 Connection ~ 4950 3000
-Wire Wire Line
-	4550 1700 4550 2800
 Wire Wire Line
 	4550 2800 4600 2800
 Connection ~ 4550 2800
@@ -550,6 +526,30 @@ Wire Wire Line
 Wire Wire Line
 	4550 3700 4600 3700
 Connection ~ 4550 3700
+$Comp
+L Amplifier_Operational:NE5532 U7
+U 1 1 6190D92F
+P 5950 4400
+F 0 "U7" H 5900 4800 50  0000 C CNN
+F 1 "NE5532" H 5950 4700 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U6
+U 2 1 6190D927
+P 5950 1800
+F 0 "U6" H 5950 2200 50  0000 C CNN
+F 1 "NE5532" H 6000 2100 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 1800 50  0001 C CNN
+	2    5950 1800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4550 3700 4550 4300
+Wire Wire Line
+	4550 1700 4550 2800
 $EndSCHEMATC

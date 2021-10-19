@@ -1,0 +1,44 @@
+Linkwitz-Riley rules:
+f = 1/(2^1.5 pi R C)
+R = 1/(2^1.5 pi f C)
+
+
+lowpass uses 4R and 6C, 2x1u
+highpass uses 6R and 4C, 2x1u
+... channel.
+Total 20R and 20C for stereo slope-pair
+
+for bookshelves:
+75Hz: 100n and 15k
+63Hz: 100n and 18k *
+47Hz: 100n and 24k
+2000Hz: 22n and 2550R *
+
+
+
+Linkwitz Transform
+31Hz, Q=0.707 to 20Hz, Q=0.73
+
+IGNORE THIS:
+R1=19.6k = 18k+1.5k+100
+R2=67.0k = 56k+11k
+R3=47.2k = 47k+220
+C1=1u
+C2=68n, 2 of
+C3=419n = 330+68+22
+
+
+THIS ONE:
+R1=13.4k = 12k+1.2k+220
+R2=45.6k = 39k+5.6k+1k
+R3=32.1k = 27k+4.7k+390
+C1=1.48u = 1.5u
+C2=100n, 2 of
+C3=615n = 560n+47n+10n
+
+
+2nd order Butterworth for LF highpass...
+for 15Hz corner
+C=200n, R=39k (14Hz)
+C=560n, R=12k (17Hz)
+needs 2 of C and 3 of R

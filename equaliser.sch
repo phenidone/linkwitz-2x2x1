@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 19
+Sheet 11 17
 Title "Linkwitz Transform"
 Date "2021-10-03"
 Rev "A"
@@ -13,10 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1150 3600 0    50   Input ~ 0
+Text HLabel 1950 3900 0    50   Input ~ 0
 IN
-Text HLabel 6300 3800 2    50   Output ~ 0
-OUT
 $Comp
 L Amplifier_Operational:NE5532 U?
 U 3 1 618769AF
@@ -46,8 +44,8 @@ AR Path="/615961F5/618769B5" Ref="C?"  Part="1"
 AR Path="/61596D2E/618769B5" Ref="C?"  Part="1" 
 AR Path="/61597705/618769B5" Ref="C?"  Part="1" 
 AR Path="/615C4B58/618769B5" Ref="C?"  Part="1" 
-AR Path="/616914EE/618769B5" Ref="C71"  Part="1" 
-F 0 "C71" H 1865 7046 50  0000 L CNN
+AR Path="/616914EE/618769B5" Ref="C70"  Part="1" 
+F 0 "C70" H 1865 7046 50  0000 L CNN
 F 1 "100n" H 1865 6955 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1788 6850 50  0001 C CNN
 F 3 "~" H 1750 7000 50  0001 C CNN
@@ -64,8 +62,8 @@ AR Path="/615961F5/618769BB" Ref="C?"  Part="1"
 AR Path="/61596D2E/618769BB" Ref="C?"  Part="1" 
 AR Path="/61597705/618769BB" Ref="C?"  Part="1" 
 AR Path="/615C4B58/618769BB" Ref="C?"  Part="1" 
-AR Path="/616914EE/618769BB" Ref="C70"  Part="1" 
-F 0 "C70" H 1865 6546 50  0000 L CNN
+AR Path="/616914EE/618769BB" Ref="C69"  Part="1" 
+F 0 "C69" H 1865 6546 50  0000 L CNN
 F 1 "100n" H 1865 6455 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1788 6350 50  0001 C CNN
 F 3 "~" H 1750 6500 50  0001 C CNN
@@ -105,17 +103,6 @@ Wire Wire Line
 Connection ~ 1750 7350
 $Comp
 L Amplifier_Operational:NE5532 U12
-U 1 1 61876C74
-P 2500 3700
-F 0 "U12" H 2500 3333 50  0000 C CNN
-F 1 "NE5532" H 2500 3424 50  0000 C CNN
-F 2 "" H 2500 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 2500 3700 50  0001 C CNN
-	1    2500 3700
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:NE5532 U12
 U 2 1 61877AFD
 P 5100 3800
 F 0 "U12" H 5100 3433 50  0000 C CNN
@@ -125,43 +112,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5100 3800 50  0001 C CNN
 	2    5100 3800
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:R R67
-U 1 1 6187BC3E
-P 2450 3200
-F 0 "R67" V 2243 3200 50  0000 C CNN
-F 1 "10k" V 2334 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2380 3200 50  0001 C CNN
-F 3 "~" H 2450 3200 50  0001 C CNN
-	1    2450 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R70
-U 1 1 6187C5F0
-P 1850 3600
-F 0 "R70" V 1643 3600 50  0000 C CNN
-F 1 "10k" V 1734 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1780 3600 50  0001 C CNN
-F 3 "~" H 1850 3600 50  0001 C CNN
-	1    1850 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2300 3200 2100 3200
-Wire Wire Line
-	2100 3200 2100 3600
-Wire Wire Line
-	2100 3600 2200 3600
-Wire Wire Line
-	2100 3600 2000 3600
-Connection ~ 2100 3600
-Wire Wire Line
-	2600 3200 2900 3200
-Wire Wire Line
-	2900 3200 2900 3700
-Wire Wire Line
-	2900 3700 2800 3700
 Text GLabel 1950 4400 0    50   UnSpc ~ 0
 GND
 $Comp
@@ -176,10 +126,10 @@ F 3 "~" H 3600 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R65
+L Device:R R66
 U 1 1 618881D6
 P 3600 3100
-F 0 "R65" V 3393 3100 50  0000 C CNN
+F 0 "R66" V 3393 3100 50  0000 C CNN
 F 1 "R2" V 3484 3100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3530 3100 50  0001 C CNN
 F 3 "~" H 3600 3100 50  0001 C CNN
@@ -187,25 +137,14 @@ F 3 "~" H 3600 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R63
+L Device:R R64
 U 1 1 6188AB3F
 P 3600 3000
-F 0 "R63" V 3393 3000 50  0000 C CNN
+F 0 "R64" V 3393 3000 50  0000 C CNN
 F 1 "R2" V 3484 3000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3530 3000 50  0001 C CNN
 F 3 "~" H 3600 3000 50  0001 C CNN
 	1    3600 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C65
-U 1 1 6188B0E8
-P 4150 3200
-F 0 "C65" V 3898 3200 50  0000 C CNN
-F 1 "C2" V 3989 3200 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 4188 3050 50  0001 C CNN
-F 3 "~" H 4150 3200 50  0001 C CNN
-	1    4150 3200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -224,10 +163,10 @@ F 3 "~" H 4800 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R66
+L Device:R R67
 U 1 1 6188EAE1
 P 4800 3100
-F 0 "R66" V 4593 3100 50  0000 C CNN
+F 0 "R67" V 4593 3100 50  0000 C CNN
 F 1 "R2" V 4684 3100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4730 3100 50  0001 C CNN
 F 3 "~" H 4800 3100 50  0001 C CNN
@@ -235,33 +174,20 @@ F 3 "~" H 4800 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R64
+L Device:R R65
 U 1 1 6188EAE7
 P 4800 3000
-F 0 "R64" V 4593 3000 50  0000 C CNN
+F 0 "R65" V 4593 3000 50  0000 C CNN
 F 1 "R2" V 4684 3000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4730 3000 50  0001 C CNN
 F 3 "~" H 4800 3000 50  0001 C CNN
 	1    4800 3000
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C C66
-U 1 1 6188EAED
-P 5250 3200
-F 0 "C66" V 4998 3200 50  0000 C CNN
-F 1 "C2" V 5089 3200 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 5288 3050 50  0001 C CNN
-F 3 "~" H 5250 3200 50  0001 C CNN
-	1    5250 3200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4950 3200 4950 3100
 Wire Wire Line
 	4650 3100 4650 3000
-Wire Wire Line
-	4950 3000 5050 3000
 $Comp
 L Device:R R75
 U 1 1 61891898
@@ -344,76 +270,33 @@ Wire Wire Line
 	3900 3900 3900 3700
 Wire Wire Line
 	3900 3700 3750 3700
-Wire Wire Line
-	3900 3900 3900 4000
 Connection ~ 3900 3900
 Wire Wire Line
-	2900 3700 3250 3700
-Wire Wire Line
 	3250 3900 3450 3900
-Connection ~ 2900 3700
 Wire Wire Line
 	3250 3200 3450 3200
 Wire Wire Line
-	3250 3200 3250 3700
-Connection ~ 3250 3700
-Wire Wire Line
-	3250 3700 3250 3900
-Wire Wire Line
 	4450 3200 4450 3700
-Wire Wire Line
-	4300 3200 4350 3200
 $Comp
-L Device:C C67
+L Device:C C68
 U 1 1 6189B712
-P 3650 4200
-F 0 "C67" H 3765 4246 50  0000 L CNN
-F 1 "C1" H 3765 4155 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 3688 4050 50  0001 C CNN
-F 3 "~" H 3650 4200 50  0001 C CNN
-	1    3650 4200
+P 3900 4200
+F 0 "C68" H 4015 4246 50  0000 L CNN
+F 1 "C1" H 4015 4155 50  0000 L CNN
+F 2 "power:C_Rect_L19.0mm_W11.0mm_combo" H 3938 4050 50  0001 C CNN
+F 3 "~" H 3900 4200 50  0001 C CNN
+	1    3900 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 4050 3650 4000
-Wire Wire Line
-	3650 4000 3900 4000
-Connection ~ 3900 4000
-Wire Wire Line
-	3900 4000 3900 4050
-Wire Wire Line
-	3900 4000 4150 4000
-Wire Wire Line
-	4150 4000 4150 4050
-Wire Wire Line
-	4150 4350 4150 4400
-Wire Wire Line
-	4150 4400 3900 4400
-Wire Wire Line
-	3650 4400 3650 4350
 Wire Wire Line
 	3900 4350 3900 4400
 Connection ~ 3900 4400
 Wire Wire Line
-	3900 4400 3650 4400
-Wire Wire Line
-	2100 3800 2100 4400
-Wire Wire Line
-	2100 4400 3650 4400
-Wire Wire Line
-	2100 3800 2200 3800
-Connection ~ 3650 4400
-Wire Wire Line
 	4800 3900 4800 4400
-Wire Wire Line
-	4800 4400 4150 4400
-Connection ~ 4150 4400
 Wire Wire Line
 	4450 3700 4800 3700
 Connection ~ 4450 3700
 Connection ~ 4450 3200
-Wire Wire Line
-	5600 3200 5600 3800
 Wire Wire Line
 	5600 3800 5400 3800
 $Comp
@@ -502,12 +385,12 @@ Wire Wire Line
 	5050 2150 5050 2250
 Connection ~ 5050 2150
 $Comp
-L Device:C C60
+L Device:C C61
 U 1 1 618B4E39
 P 4800 2450
-F 0 "C60" H 4915 2496 50  0000 L CNN
-F 1 "C3" H 4915 2405 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 4838 2300 50  0001 C CNN
+F 0 "C61" H 4600 2550 50  0000 L CNN
+F 1 "C3a" H 4600 2350 50  0000 L CNN
+F 2 "power:C_Rect_L19.0mm_W11.0mm_combo" H 4838 2300 50  0001 C CNN
 F 3 "~" H 4800 2450 50  0001 C CNN
 	1    4800 2450
 	1    0    0    -1  
@@ -535,123 +418,236 @@ Connection ~ 5050 2650
 Wire Wire Line
 	5050 2650 4800 2650
 Wire Wire Line
-	4450 3200 4450 2150
+	4450 3200 4450 3000
 Wire Wire Line
 	4450 2150 4600 2150
-Wire Wire Line
-	5600 1950 5600 3200
-Connection ~ 5600 3200
 Text GLabel 4700 2650 0    50   UnSpc ~ 0
 GND
 Wire Wire Line
 	4700 2650 4800 2650
 Connection ~ 4800 2650
 Wire Wire Line
-	1950 4400 2100 4400
-Connection ~ 2100 4400
-Wire Wire Line
 	4450 3200 4650 3200
-Wire Wire Line
-	5400 3200 5450 3200
 $Comp
-L Device:C C63
-U 1 1 6191FC2F
-P 4150 3000
-F 0 "C63" V 3898 3000 50  0000 C CNN
-F 1 "C2" V 3989 3000 50  0000 C CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 4188 2850 50  0001 C CNN
-F 3 "~" H 4150 3000 50  0001 C CNN
-	1    4150 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C64
+L Device:C C65
 U 1 1 61925A41
 P 5250 3000
-F 0 "C64" V 4998 3000 50  0000 C CNN
-F 1 "C2" V 5089 3000 50  0000 C CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 5288 2850 50  0001 C CNN
+F 0 "C65" V 5200 2850 50  0000 C CNN
+F 1 "C2" V 5200 3150 50  0000 C CNN
+F 2 "power:C_Rect_L7.0mm_W4.5mm_P5_1210_combo" H 5288 2850 50  0001 C CNN
 F 3 "~" H 5250 3000 50  0001 C CNN
 	1    5250 3000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3750 3000 3950 3000
-Wire Wire Line
-	5100 3200 5050 3200
-Wire Wire Line
-	5050 3200 5050 3000
-Connection ~ 5050 3000
-Wire Wire Line
-	5050 3000 5100 3000
-Wire Wire Line
-	4000 3200 3950 3200
-Wire Wire Line
-	3950 3200 3950 3000
-Connection ~ 3950 3000
-Wire Wire Line
-	3950 3000 4000 3000
-Wire Wire Line
-	4300 3000 4350 3000
-Wire Wire Line
-	4350 3000 4350 3200
-Connection ~ 4350 3200
-Wire Wire Line
-	4350 3200 4450 3200
-Wire Wire Line
-	5400 3000 5450 3000
-Wire Wire Line
-	5450 3000 5450 3200
-Connection ~ 5450 3200
-Wire Wire Line
-	5450 3200 5600 3200
 $Comp
-L Device:C C68
-U 1 1 6193AE35
-P 3900 4200
-F 0 "C68" H 4015 4246 50  0000 L CNN
-F 1 "C1" H 4015 4155 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 3938 4050 50  0001 C CNN
-F 3 "~" H 3900 4200 50  0001 C CNN
-	1    3900 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C69
-U 1 1 6193B2A1
-P 4150 4200
-F 0 "C69" H 4265 4246 50  0000 L CNN
-F 1 "C1" H 4265 4155 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 4188 4050 50  0001 C CNN
-F 3 "~" H 4150 4200 50  0001 C CNN
-	1    4150 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C61
+L Device:C C62
 U 1 1 6193C1FB
 P 5050 2450
-F 0 "C61" H 5165 2496 50  0000 L CNN
-F 1 "C3" H 5165 2405 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 5088 2300 50  0001 C CNN
+F 0 "C62" H 4900 2550 50  0000 L CNN
+F 1 "C3b" H 4900 2350 50  0000 L CNN
+F 2 "power:C_Rect_L7.0mm_W4.5mm_P5_1210_combo" H 5088 2300 50  0001 C CNN
 F 3 "~" H 5050 2450 50  0001 C CNN
 	1    5050 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C62
+L Device:C C63
 U 1 1 6193C690
 P 5300 2450
-F 0 "C62" H 5415 2496 50  0000 L CNN
-F 1 "C3" H 5415 2405 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L10.0mm_W5.0mm_P5.00mm_P7.50mm" H 5338 2300 50  0001 C CNN
+F 0 "C63" H 5100 2550 50  0000 L CNN
+F 1 "C3c" H 5150 2350 50  0000 L CNN
+F 2 "power:C_Rect_L7.0mm_W4.5mm_P5_1210_combo" H 5338 2300 50  0001 C CNN
 F 3 "~" H 5300 2450 50  0001 C CNN
 	1    5300 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 3600 1700 3600
+	3900 4400 4800 4400
 Wire Wire Line
-	5600 3800 6300 3800
-Connection ~ 5600 3800
+	3900 3900 3900 4050
+$Comp
+L Device:C C64
+U 1 1 6191FC2F
+P 4150 3000
+F 0 "C64" V 4100 2850 50  0000 C CNN
+F 1 "C2" V 4100 3150 50  0000 C CNN
+F 2 "power:C_Rect_L7.0mm_W4.5mm_P5_1210_combo" H 4188 2850 50  0001 C CNN
+F 3 "~" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3000 4000 3000
+Wire Wire Line
+	4950 3000 5100 3000
+Wire Wire Line
+	5400 3000 5600 3000
+Connection ~ 5600 3000
+Wire Wire Line
+	4300 3000 4450 3000
+Connection ~ 4450 3000
+Wire Wire Line
+	4450 3000 4450 2150
+Wire Wire Line
+	1950 4400 3900 4400
+Wire Wire Line
+	3250 3200 3250 3900
+Connection ~ 3250 3900
+Wire Wire Line
+	5600 1950 5600 3000
+Wire Wire Line
+	5600 3000 5600 3300
+Text HLabel 8050 3200 2    50   Output ~ 0
+OUT
+Wire Wire Line
+	1950 3900 3250 3900
+Text Notes 3750 4700 0    50   ~ 0
+Linkwitz Transform is inverting!
+Connection ~ 7100 2750
+Wire Wire Line
+	6200 2750 7100 2750
+Wire Wire Line
+	7100 2750 7100 3100
+Wire Wire Line
+	6200 2750 6200 2800
+Wire Wire Line
+	6800 3750 6800 3850
+Wire Wire Line
+	6800 3300 7100 3300
+Connection ~ 6800 3300
+Wire Wire Line
+	6800 3300 6800 3450
+Wire Wire Line
+	6600 3300 6800 3300
+Wire Wire Line
+	6200 3300 6300 3300
+Connection ~ 6200 3300
+Wire Wire Line
+	6200 3100 6200 3300
+Wire Wire Line
+	6050 3300 6200 3300
+$Comp
+L Device:R R?
+U 1 1 61F41EEB
+P 6800 4000
+AR Path="/6157B871/61F41EEB" Ref="R?"  Part="1" 
+AR Path="/615961F1/61F41EEB" Ref="R?"  Part="1" 
+AR Path="/61596D2A/61F41EEB" Ref="R?"  Part="1" 
+AR Path="/61597701/61F41EEB" Ref="R?"  Part="1" 
+AR Path="/615C4B54/61F41EEB" Ref="R?"  Part="1" 
+AR Path="/616914EE/61F41EEB" Ref="R77"  Part="1" 
+F 0 "R77" H 6870 4046 50  0000 L CNN
+F 1 "39k" H 6870 3955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6730 4000 50  0001 C CNN
+F 3 "~" H 6800 4000 50  0001 C CNN
+	1    6800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F41EF1
+P 6800 3600
+AR Path="/6157B871/61F41EF1" Ref="R?"  Part="1" 
+AR Path="/615961F1/61F41EF1" Ref="R?"  Part="1" 
+AR Path="/61596D2A/61F41EF1" Ref="R?"  Part="1" 
+AR Path="/61597701/61F41EF1" Ref="R?"  Part="1" 
+AR Path="/615C4B54/61F41EF1" Ref="R?"  Part="1" 
+AR Path="/616914EE/61F41EF1" Ref="R70"  Part="1" 
+F 0 "R70" H 6870 3646 50  0000 L CNN
+F 1 "39k" H 6870 3555 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6730 3600 50  0001 C CNN
+F 3 "~" H 6800 3600 50  0001 C CNN
+	1    6800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F41EF7
+P 6200 2950
+AR Path="/6157B871/61F41EF7" Ref="R?"  Part="1" 
+AR Path="/615961F1/61F41EF7" Ref="R?"  Part="1" 
+AR Path="/61596D2A/61F41EF7" Ref="R?"  Part="1" 
+AR Path="/61597701/61F41EF7" Ref="R?"  Part="1" 
+AR Path="/615C4B54/61F41EF7" Ref="R?"  Part="1" 
+AR Path="/616914EE/61F41EF7" Ref="R63"  Part="1" 
+F 0 "R63" H 6270 2996 50  0000 L CNN
+F 1 "39k" H 6270 2905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6130 2950 50  0001 C CNN
+F 3 "~" H 6200 2950 50  0001 C CNN
+	1    6200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61F41F03
+P 5900 3300
+AR Path="/6157B871/61F41F03" Ref="C?"  Part="1" 
+AR Path="/615961F1/61F41F03" Ref="C?"  Part="1" 
+AR Path="/61596D2A/61F41F03" Ref="C?"  Part="1" 
+AR Path="/61597701/61F41F03" Ref="C?"  Part="1" 
+AR Path="/615C4B54/61F41F03" Ref="C?"  Part="1" 
+AR Path="/616914EE/61F41F03" Ref="C66"  Part="1" 
+F 0 "C66" V 5648 3300 50  0000 C CNN
+F 1 "200n" V 5739 3300 50  0000 C CNN
+F 2 "power:C_Rect_L7.0mm_W4.5mm_P5_1210x2_combo" H 5938 3150 50  0001 C CNN
+F 3 "~" H 5900 3300 50  0001 C CNN
+	1    5900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 1 1 61F41F09
+P 7400 3200
+AR Path="/61F41F09" Ref="U?"  Part="1" 
+AR Path="/6157B871/61F41F09" Ref="U?"  Part="1" 
+AR Path="/615961F1/61F41F09" Ref="U?"  Part="1" 
+AR Path="/61596D2A/61F41F09" Ref="U?"  Part="1" 
+AR Path="/61597701/61F41F09" Ref="U?"  Part="1" 
+AR Path="/615C4B54/61F41F09" Ref="U?"  Part="1" 
+AR Path="/616914EE/61F41F09" Ref="U12"  Part="1" 
+F 0 "U12" H 7400 2833 50  0000 C CNN
+F 1 "NE5532" H 7400 2924 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 7400 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7700 3200 7800 3200
+Wire Wire Line
+	6800 4150 6800 4400
+Wire Wire Line
+	7800 2750 7800 3200
+Wire Wire Line
+	7100 2750 7800 2750
+Wire Wire Line
+	4800 4400 6800 4400
+Connection ~ 4800 4400
+Wire Wire Line
+	5600 3300 5750 3300
+Connection ~ 5600 3300
+Wire Wire Line
+	5600 3300 5600 3800
+Wire Wire Line
+	7800 3200 8050 3200
+Connection ~ 7800 3200
+Text Notes 6250 4700 0    50   ~ 0
+Butterworth High Pass, subsonic filter\nf=1/(pi*2^1.5*R*C)
+$Comp
+L Device:C C?
+U 1 1 61F5B11B
+P 6450 3300
+AR Path="/6157B871/61F5B11B" Ref="C?"  Part="1" 
+AR Path="/615961F1/61F5B11B" Ref="C?"  Part="1" 
+AR Path="/61596D2A/61F5B11B" Ref="C?"  Part="1" 
+AR Path="/61597701/61F5B11B" Ref="C?"  Part="1" 
+AR Path="/615C4B54/61F5B11B" Ref="C?"  Part="1" 
+AR Path="/616914EE/61F5B11B" Ref="C67"  Part="1" 
+F 0 "C67" V 6198 3300 50  0000 C CNN
+F 1 "200n" V 6289 3300 50  0000 C CNN
+F 2 "power:C_Rect_L7.0mm_W4.5mm_P5_1210x2_combo" H 6488 3150 50  0001 C CNN
+F 3 "~" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
