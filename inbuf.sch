@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Amplifier_Operational:NE5532 U7
 U 2 1 6159C1D0
-P 3700 4400
-F 0 "U7" H 3700 4800 50  0000 C CNN
-F 1 "NE5532" H 3750 4700 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3700 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3700 4400 50  0001 C CNN
-	2    3700 4400
+P 5950 4400
+F 0 "U7" H 5950 4800 50  0000 C CNN
+F 1 "NE5532" H 6000 4700 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 4400 50  0001 C CNN
+	2    5950 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -529,23 +529,23 @@ Connection ~ 4550 3700
 $Comp
 L Amplifier_Operational:NE5532 U7
 U 1 1 6190D92F
-P 5950 4400
-F 0 "U7" H 5900 4800 50  0000 C CNN
-F 1 "NE5532" H 5950 4700 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 4400 50  0001 C CNN
-	1    5950 4400
+P 5950 1800
+F 0 "U7" H 5900 2200 50  0000 C CNN
+F 1 "NE5532" H 5950 2100 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 1800 50  0001 C CNN
+	1    5950 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:NE5532 U6
 U 2 1 6190D927
-P 5950 1800
-F 0 "U6" H 5950 2200 50  0000 C CNN
-F 1 "NE5532" H 6000 2100 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5950 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5950 1800 50  0001 C CNN
-	2    5950 1800
+P 3700 4400
+F 0 "U6" H 3700 4800 50  0000 C CNN
+F 1 "NE5532" H 3750 4700 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3700 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3700 4400 50  0001 C CNN
+	2    3700 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line

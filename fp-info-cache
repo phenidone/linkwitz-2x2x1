@@ -1,4 +1,4 @@
-241535829255900
+241541158314900
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -41136,7 +41136,7 @@ C_Rect_L19.0mm_W11.0mm_combo
 C, Rect series, Radial, pin pitch=15.00mm, , length*width=19*11mm^2, Capacitor, http://www.wima.com/EN/WIMA_MKS_4.pdf
 C Rect series Radial pin pitch 15.00mm  length 19mm width 11mm Capacitor
 0
-7
+9
 2
 power
 DCDC-MICRODC-10W

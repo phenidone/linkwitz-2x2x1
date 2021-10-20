@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 17
+Sheet 4 17
 Title "4th Order Linkwitz-Riley Low-Pass"
 Date "2021-10-03"
 Rev "A"
@@ -399,6 +399,16 @@ Wire Wire Line
 	2800 2450 3250 2450
 Wire Wire Line
 	8250 2350 8500 2350
-Text Notes 5350 4300 0    50   ~ 0
+Text Notes 5400 3000 0    50   ~ 0
 f=1/(pi*2^1.5*R*C)
+Text Label 3000 2450 0    50   ~ 0
+IN
+Text Label 4150 2450 0    50   ~ 0
+VP1
+Text Label 4800 1900 0    50   ~ 0
+FB1
+Text Label 7100 2450 0    50   ~ 0
+VP2
+Text Label 7800 1900 0    50   ~ 0
+FB2
 $EndSCHEMATC
