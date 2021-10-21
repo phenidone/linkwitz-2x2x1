@@ -12,7 +12,7 @@ for bookshelves:
 75Hz: 100n and 15k
 63Hz: 100n and 18k *
 47Hz: 100n and 24k
-2000Hz: 22n and 2550R *
+2000Hz: 22n and 2550R/2490R *
 
 
 
