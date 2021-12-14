@@ -19,15 +19,6 @@ for bookshelves:
 Linkwitz Transform
 31Hz, Q=0.707 to 20Hz, Q=0.73
 
-IGNORE THIS:
-R1=19.6k = 18k+1.5k+100
-R2=67.0k = 56k+11k
-R3=47.2k = 47k+220
-C1=1u
-C2=68n, 2 of
-C3=419n = 330+68+22
-
-
 THIS ONE:
 R1=13.4k = 12k+1.2k+220
 R2=45.6k = 39k+5.6k+1k
