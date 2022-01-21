@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 17
 Title "Active Crossovers for 2x2.1 Speakers"
-Date "2021-10-03"
-Rev "A"
+Date "2022-01-12"
+Rev "B"
 Comp "Tyrrell Zaibatsu"
 Comment1 ""
 Comment2 ""
@@ -46,14 +46,16 @@ F2 "IN" I L 4800 5200 50
 F3 "OUT" O R 5450 5200 50 
 $EndSheet
 $Sheet
-S 1500 1200 800  300 
+S 1500 1200 850  500 
 U 6159A74A
 F0 "inbuf" 50
 F1 "inbuf.sch" 50
 F2 "IN1" I L 1500 1300 50 
-F3 "IN2" I L 1500 1400 50 
-F4 "OUT1" O R 2300 1300 50 
-F5 "OUT2" O R 2300 1400 50 
+F3 "IN2" I L 1500 1500 50 
+F4 "OUT1" O R 2350 1300 50 
+F5 "OUT2" O R 2350 1400 50 
+F6 "IN1GND" I L 1500 1400 50 
+F7 "IN2GND" I L 1500 1600 50 
 $EndSheet
 $Sheet
 S 6950 1250 650  300 
@@ -240,20 +242,6 @@ Wire Wire Line
 	7350 3800 7600 3800
 Wire Wire Line
 	1150 1300 1500 1300
-Wire Wire Line
-	1150 1500 1400 1500
-Wire Wire Line
-	1400 1500 1400 1400
-Wire Wire Line
-	1400 1400 1500 1400
-Text GLabel 1350 1850 2    50   UnSpc ~ 0
-GND
-Wire Wire Line
-	1150 1400 1250 1400
-Wire Wire Line
-	1250 1400 1250 1600
-Wire Wire Line
-	1250 1850 1350 1850
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 6171E45E
@@ -265,11 +253,6 @@ F 3 "~" H 950 1400 50  0001 C CNN
 	1    950  1400
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 1600 1250 1600
-Connection ~ 1250 1600
-Wire Wire Line
-	1250 1600 1250 1850
 Text GLabel 8350 4300 0    50   UnSpc ~ 0
 GND
 $Comp
@@ -406,7 +389,7 @@ Broadband\nJumpers
 Text Notes 3000 850  0    50   ~ 0
 LF Mixer,\nInverting
 Text Notes 6950 850  0    50   ~ 0
-LF Low-Pass\n63Hz: 100n, 18k
+LF Low-Pass\n63Hz: 100n, 18k\n112Hz: 100n, 10k
 Text Notes 5350 850  0    50   ~ 0
 Linkwitz Transform Inverting\nand Subsonic Filter (BW2)
 Text Notes 10550 1550 0    50   ~ 0
@@ -593,7 +576,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 5800 2400 5800
 Text Notes 4850 3100 0    50   ~ 0
-High-Pass\nCrossovers\n63Hz: 100n, 18k
+High-Pass\nCrossovers\n63Hz: 100n, 18k\n112Hz: 100n, 10k
 Text Notes 6650 3100 0    50   ~ 0
 Low-Pass\nCrossovers\n2kHz: 22n, 2550R
 Text Notes 7650 4850 0    50   ~ 0
@@ -840,4 +823,10 @@ Wire Wire Line
 	4950 1400 5400 1400
 Wire Wire Line
 	3200 1500 3100 1500
+Wire Wire Line
+	1150 1400 1500 1400
+Wire Wire Line
+	1150 1500 1500 1500
+Wire Wire Line
+	1150 1600 1500 1600
 $EndSCHEMATC

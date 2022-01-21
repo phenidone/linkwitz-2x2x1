@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 17
+Sheet 7 17
 Title "4th Order Linkwitz-Riley Low-Pass"
 Date "2021-10-03"
 Rev "A"

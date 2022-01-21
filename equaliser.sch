@@ -631,8 +631,8 @@ Wire Wire Line
 Wire Wire Line
 	7800 3200 8050 3200
 Connection ~ 7800 3200
-Text Notes 6250 4700 0    50   ~ 0
-Butterworth High Pass, subsonic filter\nf=1/(pi*2^1.5*R*C)
+Text Notes 6250 4850 0    50   ~ 0
+Butterworth High Pass, subsonic filter\nf=1/(pi*2^1.5*R*C)\n200n/39k = 14.4Hz\n200n/25k = 22.5Hz
 $Comp
 L Device:C C?
 U 1 1 61F5B11B
