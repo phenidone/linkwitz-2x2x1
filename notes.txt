@@ -9,6 +9,7 @@ highpass uses 6R and 4C, 2x1u
 Total 20R and 20C for stereo slope-pair
 
 for bookshelves:
+100Hz: 100n and 11253, 12k=94Hz, 11k=102Hz
 75Hz: 100n and 15k
 63Hz: 100n and 18k *
 47Hz: 100n and 24k
